@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/*----------------------------Nav Bar*/
+
+header {
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.logo {
+    margin-left: 30px;
+    padding-right: 300px;
+}
+
+
+.colour li a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.active:hover {
+    border-bottom: 1px solid white;
+}
+
+/*----------------------------Header-image*/
+
+.header-img {
+    background: url("../images/header/new.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+}
+
+/*----------------------------About*/
+
+.about-img {
+    background: url("../images/about/download.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+    height: 700px;
+}
+
+.about-content-container h2 {
+    margin-left: 170px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.about-content-container p {
+    width: 350px;
+    margin-left: 80px;
+}
+
+/*----------------------------Gallery*/
+
+.gallery h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.band {
+    height: 600px;
+}
+
+.gallery {
+    background: url("../images/gallery/back.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+    padding-top: 100px;
+    height: 600px;
+}
+/*----------------------------*/
+
+.about-content-container, 
+.music-content-container,
+.video-content-container,
+.photo-content-container,
+.tour-content-container,
+.follow-content-container {
+    padding: 95px 40px 95px 40px;
+}
+
+/*----------------------------Media-queries*/
+
+@media screen and (max-width: 1393px) {
+    .logo {
+        padding-right: 0;
+        /* margin-left: 0; */
+        margin-left: 30px;
+    }
+
+    .colour li a {
+        font-size: 15px;
+        margin:0 auto;
+        padding-left: auto;
+        padding-right: 5px;
+    }
+    
+    .header-img {
+        height: 550px;
+        margin: 0 auto;
+    }
+    
+    #about {
+        height: 550px;
+        margin: 0 auto;
+    }
+
+    .about-content-container h2 {
+        margin-left: 60px;
+        padding-top: 10px;
+    }
+
+    .about-content-container p {
+        margin-left: 5px;
+    }
+
+    .band {
+        height: 230px;
+    }
+
+    .gallery {
+        height: 600px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 943px) {
+
+    .logo {
+        margin-left: 70px;
+    }
+
+    .colour li a {
+        clear: left;
+        float: left;
+    }
+
+    .header-img {
+        margin: 0 auto;
+    }
+
+    .about-content-container h2 {
+        margin-left: 50px;
+    }
+}
